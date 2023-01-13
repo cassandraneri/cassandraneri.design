@@ -1,2 +1,2 @@
 # cassandraneri.design
-final portfolio site
+[View Site](https://cassandraneri.github.io/cassandraneri.design/)
