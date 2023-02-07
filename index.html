@@ -3,30 +3,46 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - CSS scroll-snap animation with direction change 🤓</title>
+  <title>Cassandra Neri | Portfolio 🤓</title>
+  <meta name="description" content="This is a starter HTML + CSS + JS boilerplate set of code for website projects." />
+
+  <!-- FOR MOBILE / SMALL SCREENS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FOR IE/EDGE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- FONTS -->
   <link
     href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i"
     rel="stylesheet">
 
 </head>
 
-<body>
+<body id="top">
 
-  <main>
-    <header class="site-header">
-      <div class="site-id">
-        <h1 class="rotated-text">
-          <a href="#">CASSANDRA</a>
-        </h1>
-      </div>
-      <div class="site-nav">
-        <ul>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PROJECTS</a></li>
-        </ul>
-      </div>
-    </header>
+  <header class="site-header toggle-nav animated sticky">
+    <div class="site-id">
+      <h1 class="rotated-text">
+        <a href="#top">CASSANDRA</a>
+      </h1>
+    </div>
+    <div class="site-nav">
+      <button class="menu-button navicon">Menu</button>
+      <ul class="animated">
+        <li class="animated"><a class="scroll" href="#top">Home</a></li>
+        <li class="animated"><a class="scroll" href="#about">About</a></li>
+        <li class="animated"><a class="scroll" href="#projects">Projects</a></li>
+        <li class="animated"><a class="scroll" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="projects">
+
     <section>
       <div class="hero">
         <div class="site-hero-text">
@@ -70,7 +86,7 @@
       </div>
     </section>
 
-    <section id="welcome">
+    <section id="about">
       <div class="container">
         <div class="row">
           <div class="column one-third"><img src="img/pic.jpg" alt=""></div>
@@ -92,11 +108,9 @@
               </div>
             </div>
 
-            <h4>I am a NMA student learning web design and front-end web development. On my free time you can find me
-              chillin' with my cats or playing animal crossing. <br /> This site is currently
-              under
-              construction.
-            </h4>
+            <h5>I am a NMA student learning web design and front-end web development. On my free time you can find me
+              chillin' with my cats or playing animal crossing. This site is currently under construction.
+            </h5>
 
             <div>
               <button class="custom-button" onclick="fadeOut()">CONTACT</button>
@@ -107,21 +121,28 @@
       </div>
     </section>
 
-
-    <footer>
-      <div class="footer">
+    <footer class="site-footer">
+      <nav class="site-nav">
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PROJECTS</a></li>
+          <li><a class="scroll" href="#top">Home</a></li>
+          <li><a class="scroll" href="#about">About</a></li>
+          <li><a class="scroll" href="#projects">Projects</a></li>
+          <li><a class="scroll" href="#contact">Contact</a></li>
         </ul>
+      </nav>
       </div>
     </footer>
 
   </main>
 
+  <!-- OTHER JS FILES -->
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+
+  <!-- SCROLL JS FILE -->
+  <script src="js/scroll.js"></script>
+
+  <!-- MAIN JS FILE -->
   <script src="js/script.js"></script>
 
 </body>
