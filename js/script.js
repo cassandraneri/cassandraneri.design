@@ -1,30 +1,36 @@
 document.addEventListener('DOMContentLoaded', function () {
+     // JS SCRIPTS GO HERE
+     console.log("what's up cass?");
+});
 
-     //TOGGLE NAV MOBILE MENU
-     const menubutton = document.querySelector('.menu-button');
-     const menunav = document.querySelector('.toggle-nav');
-     menubutton.addEventListener('click', function () {
-          if (menunav.getAttribute('data-navstate') === 'open') {
-               // if true do this
-               menunav.setAttribute('data-navstate', 'closed');
+// OVERLAY NAV MENU SHOW HIDE
+const mymenubutton = document.querySelector('.menu-button');
+const mysitenav = document.querySelector('.site-header .site-nav');
+
+mymenubutton.onclick = function () {
+     // statements go here
+     if (mysitenav.getAttribute('data-navstate') === 'open') {
+          mysitenav.setAttribute('data-navstate', 'closed')
+     } else {
+          mysitenav.setAttribute('data-navstate', 'open')
+     }
+};
+
+//  REVEAL ON SCROLL JS
+// CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVER
+const myobserver = new IntersectionObserver(entries => {
+     entries.forEach(entry => {
+          if (entry.isIntersecting) {
+               entry.target.setAttribute('data-sectionstate', 'active');
           } else {
-               //else (if false) do this:
-               menunav.setAttribute('data-navstate', 'open');
-          };
-
+               entry.target.setAttribute('data-sectionstate', 'inactive');
+          }
      });
+});
 
 
-     //STICKY NAV LINKS TOGGLE MENU NAV
-     const stickynavlinks = document.querySelectorAll(".sticky nav a");
-     const stickyheader = document.querySelector(".sticky");
-     let j;
-     for (j = 0; j < stickynavlinks.length; j++) {
-          stickynavlinks[j].onclick = function () {
-               stickyheader.setAttribute('data-navstate', 'closed');
-          };
-     };
-
+document.querySelectorAll('.scroll-triggered').forEach((section) => {
+     myobserver.observe(section);
 });
 
 // Created using tweenMax

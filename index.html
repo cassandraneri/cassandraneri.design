@@ -24,21 +24,31 @@
 
 <body id="top">
 
-  <header class="site-header toggle-nav animated sticky">
+  <header class="site-header">
     <div class="site-id">
       <h1 class="rotated-text">
         <a href="#top">CASSANDRA</a>
       </h1>
     </div>
-    <div class="site-nav">
-      <button class="menu-button navicon">Menu</button>
-      <ul class="animated">
-        <li class="animated"><a class="scroll" href="#top">Home</a></li>
-        <li class="animated"><a class="scroll" href="#about">About</a></li>
-        <li class="animated"><a class="scroll" href="#projects">Projects</a></li>
-        <li class="animated"><a class="scroll" href="#contact">Contact</a></li>
+
+    <nav class="site-nav" data-navstate="closed">
+
+      <button class="menu-button">
+        <div class="menu-button-text hide-visually">Menu</div>
+        <svg class="squish-x-animation" width="40" height="24">
+          <rect id="menubar-top" x="0" y="0" width="40" height="4" />
+          <rect id="menubar-mid" x="0" y="10" width="40" height="4" />
+          <rect id="menubar-bot" x="0" y="20" width="40" height="4" />
+        </svg>
+      </button>
+
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
 
   <main class="projects">
@@ -89,7 +99,7 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="column one-third"><img src="img/pic.jpg" alt=""></div>
+          <div class="column one-third"><img src="img/picflower.png" alt=""></div>
           <div class="column two-thirds">
             <h4 class="sectionhead">Hi There!</h4>
             <h2>✌🏼 I'm Cass. ✌🏼</h2>
