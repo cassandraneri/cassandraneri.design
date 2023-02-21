@@ -462,6 +462,52 @@ img {
     animation: outer-left 1s 1s ease both;
   }
 
+  /* PROJECT SECTION */
+  .img-container {
+    padding: 0 100px;
+    text-align: center;
+  }
+
+  #projects {
+    /* max-width: 1200px; */
+    border: 2px solid red;
+    /* background-size: cover; */
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+  }
+
+  .project1 {
+    background: url("https://www.cassandraneri.design/img/booktrilogy.webp") no-repeat center;
+  }
+
+  .project2 {
+    background: url("https://www.cassandraneri.design/img/Cass_Neri_Cover.jpg") no-repeat center;
+    margin: 0 1em;
+  }
+
+  .project3 {
+    background: url("https://www.cassandraneri.design/img/Cass_Neri_Stamps.jpg") no-repeat center;
+    margin-right: 1em;
+  }
+
+  .project4 {
+    background: url("https://www.cassandraneri.design/img/Canvas-Tote-Bag-MockUp.jpg") no-repeat center;
+  }
+
+  .projects__wrapper {
+    padding: 120px 0 60px;
+    background: transparent;
+    transition: all ease 0.5s;
+    color: transparent;
+  }
+
+  .projects__wrapper:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+
+
   /* ABOUT SECTION */
 
   #about {
