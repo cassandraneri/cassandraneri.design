@@ -534,10 +534,9 @@ img {
     .grid {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(12, 6vw);
+      grid-template-rows: repeat(10, 6vw);
       grid-gap: 35px;
       width: 100%;
-      padding-bottom: 2em;
     }
 
     .item_img {
@@ -548,7 +547,7 @@ img {
     }
 
     .item1 {
-      grid-column-start: 8;
+      grid-column-start: 9;
       grid-column-end: 13;
       grid-row-start: 5;
       grid-row-end: 10;
@@ -565,7 +564,7 @@ img {
     .item3 {
       grid-column-start: 9;
       grid-column-end: 13;
-      grid-row-start: 2;
+      grid-row-start: 1;
       grid-row-end: 5;
     }
 
@@ -573,21 +572,21 @@ img {
       grid-column-start: 1;
       grid-column-end: 9;
       grid-row-start: 4;
-      grid-row-end: 8;
+      grid-row-end: 7;
     }
 
     .item5 {
       grid-column-start: 1;
       grid-column-end: 5;
-      grid-row-start: 8;
-      grid-row-end: 11;
+      grid-row-start: 1;
+      grid-row-end: 4;
     }
 
     .item6 {
-      grid-column-start: 5;
-      grid-column-end: 8;
-      grid-row-start: 8;
-      grid-row-end: 13;
+      grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row-start: 7;
+      grid-row-end: 10;
     }
   }
 
@@ -605,20 +604,37 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.8);
     height: 100%;
-    padding: 2em;
     text-align: center;
+    width: 100%;
+    padding: 3em;
   }
 
   .hover-block img {
-    display: block;
+    /* display: block; */
+    transition: transform .3s ease;
   }
+
+  .hover-block:hover img {
+    animation: dimAnim linear .2s;
+    animation-fill-mode: forwards;
+    transform: scale(1.05);
+  }
+
+  @keyframes dimAnim {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0.5;
+    }
+  }
+
 
   li {
     list-style: none;
   }
-
 
   /* ABOUT SECTION */
 
@@ -710,6 +726,7 @@ img {
     z-index: 1;
     cursor: crosshair;
     transition: 0.8s ease-out;
+    margin: 0 auto;
   }
 
   .custom-button:hover {
@@ -732,6 +749,11 @@ img {
     color: #101010;
     cursor: crosshair;
     border: 2px solid #101010;
+  }
+
+  .mTop {
+    margin-top: 3em;
+    margin-left: 0;
   }
 
   /* SITE NAV */
