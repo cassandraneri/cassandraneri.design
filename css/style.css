@@ -529,7 +529,6 @@ img {
 
     .container {
       margin: 0 auto;
-      background-color: pink;
     }
 
     .grid {
@@ -538,6 +537,7 @@ img {
       grid-template-rows: repeat(12, 6vw);
       grid-gap: 35px;
       width: 100%;
+      padding-bottom: 2em;
     }
 
     .item_img {
@@ -642,11 +642,6 @@ img {
     box-sizing: border-box;
   }
 
-  body {
-    margin: 0;
-  }
-
-
   /* MEDIA QUERIES */
 
   @media (min-width: 768px) {
@@ -667,7 +662,7 @@ img {
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1700px;
     }
   }
 
