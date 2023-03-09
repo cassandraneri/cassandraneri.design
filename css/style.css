@@ -6,9 +6,8 @@ body {
   font-family: Poppins, sans-serif;
   min-height: 100vh;
   line-height: 1.4;
-  background-color: #9f8170;
+  background-color: black;
   position: relative;
-  overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -114,7 +113,7 @@ img {
 }
 
 .site-nav a:hover {
-  color: #9f8170;
+  color: #beb3ae;
 }
 
 .site-nav .menu-button {
@@ -346,17 +345,8 @@ img {
   /* HERO SECTION */
 
   .hero {
-    min-height: 100vh;
-    width: 100%;
-    min-width: 100vw;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
     position: relative;
-  }
-
-  hr {
-    width: 85em;
+    overflow-x: hidden;
   }
 
   /* SITE STRUCTURE */
@@ -416,7 +406,6 @@ img {
   /* SITE HERO */
 
   .site-hero-text {
-    font-family: epicursive script;
     padding-left: 1em;
     grid-column: 1 / -1;
     grid-row: 1;
@@ -594,6 +583,7 @@ img {
   /* ON HOVER BLOCKS */
   .hover-block {
     position: relative;
+    overflow: hidden;
   }
 
   .hover-block:hover .hover-content {
@@ -725,7 +715,7 @@ img {
     overflow: hidden;
     background: none;
     z-index: 1;
-    cursor: pointer;
+    cursor: crosshair;
     transition: 0.8s ease-out;
     margin: 0 auto;
   }
@@ -733,7 +723,7 @@ img {
   .custom-button:hover {
     content: "";
     color: #101010;
-    cursor: pointer;
+    cursor: crosshair;
     border: 2px solid #101010;
     background-color: #ffffff;
     height: 100%;
@@ -748,7 +738,7 @@ img {
 
   .custom-button:hover:after .site-nav a {
     color: #101010;
-    cursor: pointer;
+    cursor: crosshair;
     border: 2px solid #101010;
   }
 
@@ -776,14 +766,6 @@ img {
     display: flex;
     justify-content: center;
     list-style: none;
-  }
-
-  main {
-    view-timeline-name: --main;
-    overflow-x: hidden;
-    overflow-y: auto;
-    display: grid;
-    height: 100vh;
   }
 
   :is(h1) {
@@ -1233,4 +1215,22 @@ img {
   /* a:focus {
     outline: 2px dashed white;
   } */
+}
+
+/* PEACE EMOJI */
+.peaceemoji {
+  display: inline-block;
+  animation: wave 2s infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
 }
