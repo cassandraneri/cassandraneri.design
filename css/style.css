@@ -6,7 +6,7 @@ body {
   font-family: Poppins, sans-serif;
   min-height: 100vh;
   line-height: 1.4;
-  background-color: black;
+  background-color: #aca29d;
   position: relative;
   margin: 0;
   padding: 0;
@@ -22,6 +22,15 @@ body {
   body {
     font-size: 112.5%;
   }
+}
+
+@font-face {
+  font-family: 'milyunaregular';
+  src: url('/fonts/milyuna-regular-webfont.woff') format('woff'),
+    url('/fonts/milyuna-regular-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 /* HEADINGS */
@@ -40,12 +49,15 @@ h6 {
 }
 
 h1 {
+  font-family: 'milyunaregular';
   font-size: 3em;
+  font-weight: 300;
   /* 48px */
   line-height: 1;
 }
 
 h2 {
+  font-family: 'milyunaregular';
   font-size: 2.50em;
   /* 36px */
   line-height: 1.1;
@@ -770,7 +782,7 @@ img {
 
   :is(h1) {
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 10rem;
   }
 
@@ -1107,7 +1119,7 @@ img {
 
   .still-text {
     color: #fff;
-    font-family: Playfair Display;
+    font-family: 'milyunaregular';
     font-size: 30px;
   }
 
@@ -1227,9 +1239,11 @@ img {
   0% {
     transform: rotate(-15deg);
   }
+
   50% {
     transform: rotate(15deg);
   }
+
   100% {
     transform: rotate(-15deg);
   }
