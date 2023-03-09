@@ -6,7 +6,7 @@ body {
   font-family: Poppins, sans-serif;
   min-height: 100vh;
   line-height: 1.4;
-  background-color: black;
+  background-color: #9f8170;
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -114,7 +114,7 @@ img {
 }
 
 .site-nav a:hover {
-  color: #beb3ae;
+  color: #9f8170;
 }
 
 .site-nav .menu-button {
@@ -416,6 +416,7 @@ img {
   /* SITE HERO */
 
   .site-hero-text {
+    font-family: epicursive script;
     padding-left: 1em;
     grid-column: 1 / -1;
     grid-row: 1;
@@ -724,7 +725,7 @@ img {
     overflow: hidden;
     background: none;
     z-index: 1;
-    cursor: crosshair;
+    cursor: pointer;
     transition: 0.8s ease-out;
     margin: 0 auto;
   }
@@ -732,7 +733,7 @@ img {
   .custom-button:hover {
     content: "";
     color: #101010;
-    cursor: crosshair;
+    cursor: pointer;
     border: 2px solid #101010;
     background-color: #ffffff;
     height: 100%;
@@ -747,7 +748,7 @@ img {
 
   .custom-button:hover:after .site-nav a {
     color: #101010;
-    cursor: crosshair;
+    cursor: pointer;
     border: 2px solid #101010;
   }
 
