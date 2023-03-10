@@ -83,6 +83,7 @@ h5 {
 
 h5 {
   font-size: 1em;
+  font-weight: 200;
   /* 16px */
   line-height: 1.5;
 }
@@ -468,6 +469,21 @@ img {
     animation: outer-left 1s 1s ease both;
   }
 
+  /* INTRO SECTION */
+
+  #intro {
+    justify-content: center;
+    padding: 0 20em;
+  }
+
+  .intro-img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   /* PROJECT SECTION */
   .img-container {
     padding: 0 100px;
@@ -643,12 +659,12 @@ img {
 
   #about {
     justify-content: center;
-    padding: 10em;
+    padding: 0 30em;
   }
 
-  .aboutme-img {
-    width: 50%;
-    height: auto;
+  #about img {
+    width: 100%;
+    height: 32em;
     object-fit: cover;
     margin: 0 auto;
     text-align: center;
@@ -727,7 +743,7 @@ img {
     overflow: hidden;
     background: none;
     z-index: 1;
-    cursor: crosshair;
+    cursor: pointer;
     transition: 0.8s ease-out;
     margin: 0 auto;
   }
@@ -735,7 +751,7 @@ img {
   .custom-button:hover {
     content: "";
     color: #101010;
-    cursor: crosshair;
+    cursor: pointer;
     border: 2px solid #101010;
     background-color: #ffffff;
     height: 100%;
@@ -750,7 +766,7 @@ img {
 
   .custom-button:hover:after .site-nav a {
     color: #101010;
-    cursor: crosshair;
+    cursor: pointer;
     border: 2px solid #101010;
   }
 
@@ -1120,12 +1136,12 @@ img {
   .still-text {
     color: #fff;
     font-family: 'milyunaregular';
-    font-size: 30px;
+    font-size: 50px;
   }
 
   .texts-container {
     display: inline-block;
-    height: 30px;
+    height: 50px;
     overflow: hidden;
     color: #d4c9c3;
   }
