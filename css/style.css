@@ -449,7 +449,7 @@ img {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 2em;
   }
 
   .site-nav a {
@@ -524,16 +524,8 @@ img {
   /* INTRO SECTION */
 
   #intro {
-    justify-content: center;
-    padding: 0 20em;
-  }
-
-  .intro-img {
-    width: 50%;
-    height: auto;
-    object-fit: cover;
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    justify-content: flex-start;
   }
 
   /* PROJECT SECTION */
@@ -834,8 +826,8 @@ img {
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 6px;
-    color: #95827c;
-    border: 2px solid #95827c;
+    color: #fff5ee;
+    border: 2px solid #fff5ee;
     text-transform: lowercase;
     overflow: hidden;
     background: none;
@@ -875,7 +867,7 @@ img {
   /* SITE NAV */
 
   .site-footer {
-    padding: 6em;
+    padding: 5em 0 2em 0;
     background: #95827c;
   }
 
@@ -888,9 +880,24 @@ img {
   }
 
   .site-footer ul {
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0 2em;
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .site-footer .still-text, .site-footer h5 {
+    color: white;
+  }
+
+  .site-footer h5 {
+    font-size: .8em;
+    font-weight: 200;
+    /* 16px */
+    line-height: 1.5;
+    max-width: 35em;
+    padding-bottom: .5em;
   }
 
   :is(h1) {
@@ -1324,15 +1331,12 @@ img {
 
   /* SEMANTIC GRID SYSTEM */
 
-  .row>.column {
-    margin-bottom: 4%;
-  }
 
   @media (min-width: 768px) {
 
     .row {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
 
     .row>.column {
