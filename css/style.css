@@ -893,6 +893,14 @@ img {
     color: #e7b2a1;
   }
 
+  .site-footer .site-nav ul {
+    margin: 0;
+    padding: 0 2em;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
   .site-footer .site-nav-work ul {
     margin: 0;
     padding: 0 2em;
