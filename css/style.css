@@ -40,17 +40,17 @@ h6 {
 }
 
 h1 {
-  font-family: "gelica", sans-serif;
-  font-weight: 200;
+  font-family: "kepler-std", serif;
+  font-weight: 500;
   font-style: italic;
   /* 48px */
   line-height: 1;
 }
 
 h2 {
-  font-family: "gelica", sans-serif;
-  font-weight: 200;
-  font-size: 2.50em;
+  font-family: "kepler-std", serif;
+  font-weight: 700;
+  font-size: 3em;
   font-weight: normal;
   /* 36px */
   line-height: 1.1;
@@ -64,21 +64,21 @@ h2 a {
 
 h3 {
   font-size: 1.5em;
-  font-weight: 200;
+  font-weight: 400;
   /* 24px */
   line-height: 1.2;
 }
 
 h4 {
   font-size: 1.3125em;
-  font-weight: 200;
+  font-weight: 400;
   /* 21px */
   line-height: 1.3;
 }
 
 h5 {
   font-size: 1em;
-  font-weight: 200;
+  font-weight: 300;
   /* 16px */
   line-height: 1.5;
   max-width: 45em;
@@ -96,32 +96,36 @@ h5 {
   color: #95827c;
 }
 
+p {
+  font-weight: 400;
+}
+
 .hover-content p {
   color: white;
   text-align: center;
   font-size: 1.5em;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 h3.subheader {
-  font-family: "gelica", sans-serif;
-  font-weight: 200;
+  font-family: "kepler-std", serif;
+  font-weight: 400;
   font-style: italic;
   font-size: 3em;
   max-width: 45em;
 }
 
 .hover-content h3 {
-  font-family: "gelica", sans-serif;
-  font-weight: 300;
+  font-family: "kepler-std", serif;
+  font-weight: 400;
   color: #95827c;
 }
 
 .hover-content h2 {
-  font-family: "gelica", sans-serif;
-  font-weight: 300;
+  font-family: "kepler-std", serif;
+  font-weight: 500;
   color: white;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 .column.two-thirds p {
@@ -393,9 +397,9 @@ header.site-header h1 {
 
 .site-id a {
   color: #95827c;
-  font-family: "gelica", sans-serif;
+  font-family: "kepler-std", serif;
   font-weight: 200;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-style: italic;
   text-decoration: none;
   padding: 1em;
@@ -414,6 +418,7 @@ header.site-header h1 {
 .site-nav a {
   color: #95827c;
   font-family: Poppins;
+  font-weight: 200;
   text-decoration: none;
   display: inline-block;
   padding: 1em;
@@ -620,7 +625,7 @@ img {
 @media (min-width: 768px) {
 
   .container {
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 0 auto;
     padding: 0 4em;
   }
@@ -829,8 +834,9 @@ li {
 
 .custom-button {
   padding: 24px 48px;
-  font-family: "gelica", sans-serif;
-  font-weight: 200;
+  font-family: "kepler-std", serif;
+  ;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 1px;
   color: #fff5ee;
@@ -882,6 +888,7 @@ li {
 .site-footer a {
   color: #fff5ee;
   text-align: center;
+  font-weight: 200;
   text-decoration: none;
   list-style: none;
   padding: 1em;
@@ -932,7 +939,7 @@ li {
 
 .site-footer h5 {
   font-size: .8em;
-  font-weight: 200;
+  font-weight: 400;
   /* 16px */
   line-height: 1.5;
   max-width: 35em;
@@ -971,8 +978,9 @@ li {
 .wrapper .tooltip {
   position: absolute;
   top: 0;
-  font-family: "gelica", sans-serif;
-  font-weight: 200;
+  font-family: "kepler-std", serif;
+  ;
+  font-weight: 400;
   font-style: normal;
   padding: 5px 8px;
   border-radius: 5px;
@@ -1307,8 +1315,9 @@ li {
 
 .still-text {
   color: #95827c;
-  font-family: "gelica", sans-serif;
-  font-weight: 200;
+  font-family: "kepler-std", serif;
+  ;
+  font-weight: 400;
   font-size: 50px;
 }
 
@@ -1316,7 +1325,7 @@ li {
   display: inline-block;
   height: 50px;
   overflow: hidden;
-  color: #f9e1d5;
+  color: #ebd0c3;
   max-width: 46em;
 }
 
@@ -1450,12 +1459,24 @@ figure:not(:hover)>video {
 
 /* SUBPAGE RECOVERY */
 
+.paragraphs__item__title {
+  font-family: "kepler-std", serif;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.paragraphs__item__title .paragraphs__item__title--cream {
+  font-family: "kepler-std", serif;
+  font-style: italic;
+  font-weight: 600;
+}
+
 .paragraphs__item__number {
   position: absolute;
   color: #f9e1d5;
   font-size: 15em;
-  font-family: "gelica", sans-serif;
-  font-weight: 200;
+  font-family: "kepler-std", serif;
+  font-weight: 500;
 }
 
 .paragraphs__item .paragraphs__item__number {
@@ -1654,13 +1675,13 @@ figure:not(:hover)>video {
 
 .creativeprocesswork h2 {
   color: #f9e1d5;
-  font-style: italic;
 }
 
 .creativeprocesswork p {
   color: #f9e1d5;
   padding-bottom: 3em;
   font-style: normal;
+  font-weight: 100;
 }
 
 /* VIDEOS */
@@ -1709,7 +1730,7 @@ textarea:focus {
 
 b,
 strong {
-  font-weight: 200;
+  font-weight: 400;
   ;
 }
 
@@ -1759,7 +1780,7 @@ html {
 
 .title {
   font-size: 2.625em;
-  font-weight: 200;
+  font-weight: 400;
   ;
   text-transform: uppercase;
   transform: translateY(-30%);
@@ -1962,8 +1983,8 @@ html {
   padding: 0 20px;
   height: 53px;
   line-height: 53px;
-  font-family: "gelica", sans-serif;
-  font-weight: 200;
+  font-family: "kepler-std", serif;;
+  font-weight: 400;
   font-size: 13px;
   letter-spacing: 0.065em;
   cursor: pointer;
@@ -2793,7 +2814,7 @@ html {
   left: 0;
   overflow: hidden;
   opacity: 0;
-  font-weight: 200;
+  font-weight: 400;
   ;
   -webkit-transition: opacity 0.25s ease, -webkit-transform 0.25s ease;
   -moz-transition: opacity 0.25s ease, -moz-transform 0.25s ease;
@@ -2939,8 +2960,8 @@ html {
   top: 218px;
   font-size: 7.5em;
   font-style: normal;
-  font-weight: 200;
-  font-family: "gelica", sans-serif;
+  font-weight: 400;
+  font-family: "kepler-std", serif;;
   letter-spacing: 0.045em
 }
 
@@ -3631,8 +3652,8 @@ html {
   position: absolute;
   opacity: 0;
   color: #f9e1d5;
-  font-family: "gelica", sans-serif;
-  font-weight: 200;
+  font-family: "kepler-std", serif;;
+  font-weight: 400;
   font-size: 18.75em;
   -webkit-transition: opacity 0.7s ease;
   -moz-transition: opacity 0.7s ease;
@@ -3968,7 +3989,7 @@ html {
   color: white;
   font-size: 1.75em;
   line-height: 1.3;
-  font-weight: 200;
+  font-weight: 400;
   -webkit-transition: opacity 0.25s ease, -webkit-transform 0.25s ease;
   -moz-transition: opacity 0.25s ease, -moz-transform 0.25s ease;
   -o-transition: opacity 0.25s ease, -o-transform 0.25s ease;
@@ -4126,7 +4147,7 @@ html {
   margin-bottom: 11px;
   color: white;
   font-size: .6875em;
-  font-weight: 200;
+  font-weight: 400;
   ;
   letter-spacing: 0.065em;
   -webkit-transition: opacity 0.25s ease, -webkit-transform 0.25s ease;
@@ -4174,7 +4195,7 @@ html {
 
 .testimonials__person_title {
   color: white;
-  font-weight: 200;
+  font-weight: 400;
   font-size: .6875em
 }
 
@@ -4335,7 +4356,7 @@ html {
 .footer__copyright {
   float: right;
   font-size: 10px;
-  font-weight: 200;
+  font-weight: 400;
   ;
   text-transform: uppercase;
   letter-spacing: 0.05em
@@ -4435,7 +4456,7 @@ html {
   letter-spacing: 0.05em;
   text-decoration: none;
   color: #333435;
-  font-weight: 200;
+  font-weight: 400;
   ;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
@@ -4482,7 +4503,7 @@ html {
   color: rgba(51, 52, 53, 0.3);
   font-size: 11px;
   letter-spacing: 0.05em;
-  font-weight: 200;
+  font-weight: 400;
   ;
   text-transform: uppercase
 }
@@ -4727,7 +4748,7 @@ html {
 
 .footer__message,
 .footer__message a {
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .footer__message--red {
@@ -5901,9 +5922,9 @@ body:not(.body--mobile) .state-at-top-position .paragraphs_box--top {
   z-index: 10;
   color: #95827c;
   letter-spacing: 0.03em;
-  font-family: "gelica", sans-serif;
+  font-family: "kepler-std", serif;;
   font-size: 3.75em;
-  font-weight: 200;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -6004,8 +6025,8 @@ body:not(.body--mobile) .state-at-top-position .paragraphs_box--top {
   position: absolute;
   color: #f9e1d5;
   font-size: 15em;
-  font-family: "gelica", sans-serif;
-  font-weight: 200;
+  font-family: "kepler-std", serif;;
+  font-weight: 400;
 }
 
 @media (max-width: 1023px) {
@@ -6495,7 +6516,7 @@ h2.features__title {
 
 .features__item__title {
   margin-bottom: .9375em;
-  font-weight: 200;
+  font-weight: 400;
   ;
   font-size: .875em;
   text-transform: uppercase;
@@ -6504,8 +6525,8 @@ h2.features__title {
 
 .features__item__text {
   font-size: .9375em;
-  font-family: "gelica", sans-serif;
-  font-weight: 200;
+  font-family: "kepler-std", serif;;
+  font-weight: 400;
 }
 
 @media (max-width: 1023px) {
@@ -6548,7 +6569,7 @@ h2.features__title {
   margin-bottom: 3.125rem;
   font-size: 2.25em;
   line-height: 1.25;
-  font-weight: 200;
+  font-weight: 400;
   ;
   letter-spacing: 0.03em;
   text-transform: uppercase
@@ -7004,7 +7025,7 @@ h2.features__title {
 .purchase__card_title {
   margin-bottom: 15px;
   color: #95827c;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 12px;
   text-transform: uppercase
 }
@@ -7012,7 +7033,7 @@ h2.features__title {
 .purchase__card_subtitle {
   margin-bottom: 25px;
   color: #95827c;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 13px;
   opacity: 0.5
 }
@@ -7023,7 +7044,7 @@ h2.features__title {
   margin-left: 22px;
   color: #797979;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .purchase__old_card_price:after {
@@ -7054,7 +7075,7 @@ h2.features__title {
   margin-bottom: 52px;
   color: #0065ff;
   font-size: 38px;
-  font-weight: 200;
+  font-weight: 400;
   ;
   line-height: 1
 }
@@ -7062,7 +7083,7 @@ h2.features__title {
 .purchase__card_price:before {
   content: "$";
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   ;
   position: absolute;
   left: 0;
@@ -7245,7 +7266,7 @@ h2.features__title {
   margin: auto;
   color: white;
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 400;
   ;
   letter-spacing: 0.065em
 }
@@ -7293,7 +7314,7 @@ h2.features__title {
 .purchase__features__title {
   margin-bottom: 13px;
   color: white;
-  font-weight: 200;
+  font-weight: 400;
   ;
   font-size: 11px;
   letter-spacing: 0.1em;
@@ -8042,7 +8063,7 @@ h2.features__title {
   border: 1px solid #242526;
   color: #242526;
   font-size: 11px;
-  font-weight: 200;
+  font-weight: 400;
   ;
   text-transform: uppercase;
   letter-spacing: 0.085em;
@@ -8088,7 +8109,7 @@ h2.features__title {
   font-size: 11px;
   letter-spacing: 0.085em;
   padding-left: 20px;
-  font-weight: 200;
+  font-weight: 400;
   ;
   text-transform: uppercase;
   text-decoration: none;
@@ -8134,7 +8155,7 @@ h2.features__title {
   margin: 85px 0;
   color: #455fff;
   font-size: 80px;
-  font-weight: 200;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center
 }
@@ -8443,7 +8464,7 @@ h2.features__title {
   transform-origin: right center;
   color: white;
   font-size: 10px;
-  font-weight: 200;
+  font-weight: 400;
   ;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -8485,7 +8506,7 @@ h2.features__title {
 .inner_title {
   margin-bottom: 63px;
   font-size: 36px;
-  font-weight: 200;
+  font-weight: 400;
   ;
   text-align: center
 }
@@ -8511,12 +8532,12 @@ h2.features__title {
 .text {
   margin-bottom: 10px;
   font-size: 13px;
-  font-weight: 200;
+  font-weight: 400;
   color: #747474
 }
 
 .text a {
-  font-weight: 200;
+  font-weight: 400;
   text-decoration: underline
 }
 
@@ -8560,7 +8581,7 @@ h2.features__title {
 .info__title {
   margin-bottom: 17px;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .contact_us_button_box {
@@ -8745,7 +8766,7 @@ h2.features__title {
 .news__date {
   margin-bottom: 23px;
   font-size: 10px;
-  font-weight: 200;
+  font-weight: 400;
   ;
   color: #747474;
   text-transform: uppercase
