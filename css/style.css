@@ -437,6 +437,16 @@ header.site-header h1 {
   z-index: 2;
 }
 
+@media (max-width: 768px) {
+  .site-hero-text {
+    padding: 3em;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
 .site-hero-inner-text {
   display: inline-block;
 }
@@ -590,10 +600,12 @@ header.site-header h1 {
   border: .5px solid rgba(0, 0, 0, .3);
 }
 
-/* MELISSA'S CODE */
+/* CONTAINER */
 
 .container {
+  max-width: 1600px;
   margin: 0 auto;
+  padding: 0 4em;
 }
 
 body {
@@ -784,9 +796,6 @@ li {
     /* 18px */
   }
 
-  .container {
-    max-width: 1700px;
-  }
 }
 
 /* ANIMATED BUTTON */
@@ -1630,6 +1639,12 @@ figure:not(:hover)>video {
   margin-bottom: 15em;
 }
 
+@media (max-width: 767px) {
+  .creativeprocess img {
+    margin-top: 10em;
+  }
+}
+
 /* CREATIVE PROCESS WORK */
 
 .creativeprocesswork {
@@ -1655,6 +1670,15 @@ video {
   max-width: 100%;
   height: auto;
   margin-top: 6em;
+}
+
+@media (max-width: 768px) {
+  video {
+    offset: unset;
+    max-width: 100%;
+    height: auto;
+    margin-top: 6em;
+  }
 }
 
 /* -------------------- SUBPAGE STUFF -------------------- */
