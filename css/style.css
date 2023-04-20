@@ -51,7 +51,7 @@ h2 {
   font-family: "kepler-std", serif;
   font-weight: 700;
   font-size: 3em;
-  font-weight: normal;
+  font-style: italic;
   /* 36px */
   line-height: 1.1;
 }
@@ -104,7 +104,7 @@ p {
   color: white;
   text-align: center;
   font-size: 1.5em;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 h3.subheader {
@@ -610,7 +610,7 @@ header.site-header h1 {
 .container {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 4em;
+  padding: 2 em;
 }
 
 body {
@@ -701,15 +701,30 @@ img {
   background-color: rgba(0, 0, 0, 0.472);
 }
 
+@media (min-width:768px) {
+  .hover-block .hover-content {
+    display: none;
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 5em;
+  }
+}
+
 .hover-block .hover-content {
   display: none;
   position: absolute;
+  align-content: center;
+  text-align: center;
   top: 0;
   left: 0;
   height: 100%;
-  text-align: center;
   width: 100%;
-  padding: 3em;
+  padding-top: 5em;
 }
 
 .hover-block img {
@@ -1680,8 +1695,7 @@ figure:not(:hover)>video {
 .creativeprocesswork p {
   color: #f9e1d5;
   padding-bottom: 3em;
-  font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 /* VIDEOS */
