@@ -81,7 +81,7 @@ h5 {
   font-weight: 300;
   /* 16px */
   line-height: 1.5;
-  max-width: 45em;
+  max-width: 30em;
   color: #95827c;
 }
 
@@ -105,6 +105,7 @@ p {
   text-align: center;
   font-size: 1.5em;
   font-weight: 200;
+  margin: 0;
 }
 
 h3.subheader {
@@ -112,7 +113,7 @@ h3.subheader {
   font-weight: 400;
   font-style: italic;
   font-size: 3em;
-  max-width: 45em;
+  max-width: 23em;
 }
 
 .hover-content h3 {
@@ -126,6 +127,7 @@ h3.subheader {
   font-weight: 500;
   color: white;
   font-size: 4em;
+  margin: 0;
 }
 
 .column.two-thirds p {
@@ -435,7 +437,6 @@ header.site-header h1 {
 /* SITE HERO */
 
 .site-hero-text {
-  padding-left: 12em;
   grid-column: 1 / -1;
   grid-row: 1;
   width: 100%;
@@ -444,7 +445,7 @@ header.site-header h1 {
 
 @media (max-width: 768px) {
   .site-hero-text {
-    padding: 3em;
+    padding: 2em 0;
     grid-column: 1 / -1;
     grid-row: 1;
     width: 100%;
@@ -610,7 +611,7 @@ header.site-header h1 {
 .container {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 2 em;
+  padding: 0 2em;
 }
 
 body {
@@ -638,6 +639,8 @@ img {
     padding-bottom: 2em;
     width: 100%;
   }
+
+
 
   .item_img {
     width: 100%;
@@ -690,6 +693,19 @@ img {
   }
 }
 
+.grid-flexy {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+.grid-flexy li {
+  width: calc(50% - 1em);
+}
+
 /* ON HOVER BLOCKS */
 .hover-block {
   position: relative;
@@ -697,7 +713,9 @@ img {
 }
 
 .hover-block:hover .hover-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.472);
 }
 
@@ -711,7 +729,27 @@ img {
     left: 0;
     height: 100%;
     width: 100%;
-    padding-top: 5em;
+  }
+}
+
+@media (max-width:768px) {
+  .hover-block .hover-content {
+    display: none;
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .hover-content h2 {
+    font-size: 2em;
+  }
+
+  .hover-content p {
+    font-size: 1em;
   }
 }
 
@@ -724,7 +762,6 @@ img {
   left: 0;
   height: 100%;
   width: 100%;
-  padding-top: 5em;
 }
 
 .hover-block img {
@@ -758,10 +795,14 @@ li {
   padding: 3em;
 }
 
+#about h5 {
+  max-width: 30em;
+}
+
 @media (min-width: 768px) {
   #about {
     justify-content: center;
-    padding: 0 20em;
+    padding: 0 15em;
   }
 }
 
@@ -780,6 +821,7 @@ li {
   object-fit: cover;
   margin: 0 auto;
   text-align: center;
+  border: 5px solid #f9e1d5;
 }
 
 @media (min-width: 768px) {
