@@ -1715,7 +1715,7 @@ figure:not(:hover)>video {
 
 .paragraphs__item--no_number {
   margin-top: 0;
-  margin-left: 48.6%
+  /* margin-left: 48.6% */
 }
 
 @media (min-width: 2560px) {
