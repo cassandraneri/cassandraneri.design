@@ -1012,20 +1012,25 @@ li {
 .currently-table {
   color: #fff5ee;
   margin: 0;
-  padding: 0;
+  padding: 1em;
+  text-align: left;
 }
 
 .currently-table th:first-of-type {
   visibility: hidden;
 }
 
-.currently-table {
-  text-align: left;
-  padding: 1em;
-}
-
 .currently-table td {
   padding: 2em 0 0 0;
+}
+
+.currently-table a {
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 :is(h1) {
