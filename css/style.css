@@ -1884,7 +1884,7 @@ video {
   .image-slider-rc {
     display: flex;
     justify-content: space-between;
-    height: calc(80vh - 10rem);
+    height: calc(100vh - 18rem);
     align-items: center;
     padding: 0 3.125rem;
   }
@@ -1898,9 +1898,9 @@ video {
   .wrapper {
     position: absolute;
     overflow: hidden;
-    height: 50vh;
+    height: 100vh;
     width: 100%;
-    top: 100px;
+    top: 220px;
     left: 0;
     z-index: -1;
     padding: 1em;
@@ -1922,8 +1922,8 @@ video {
   .absolute-wrapper {
     position: absolute;
     overflow: hidden;
-    height: 100vh;
-    width: 60%;
+    height: 115vh;
+    width: 65%;
     top: 0;
     left: 0;
     z-index: -1;
@@ -1957,7 +1957,7 @@ video {
 }
 
 .content {
-  margin-bottom: 25em;
+  margin-bottom: 20em;
 }
 
 .content h1 {
@@ -1980,6 +1980,7 @@ video {
   width: 100%;
   flex-grow: 1;
   flex-shrink: 0;
+  offset: path('M 300 250 C 300 -1000 250 180 350 80') 5px auto 90deg;
 }
 
 /* .image:nth-child(1) {
@@ -1993,6 +1994,11 @@ video {
 .image:nth-child(3) {
   background: url("https://vikram-hegde.github.io/ui-animation/images/image3.png") no-repeat 50% 50% / cover;
 } */
+
+.navigation {
+  margin: 0;
+  padding-bottom: 20em;
+}
 
 .navigation .right,
 .navigation .left {
