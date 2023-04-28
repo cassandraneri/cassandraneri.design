@@ -1904,6 +1904,7 @@ video {
     left: 0;
     z-index: -1;
     padding: 1em;
+    padding-top: 15em;
   }
 }
 
@@ -1953,6 +1954,10 @@ video {
 
 .colored-backgrounds div:nth-child(3) {
   background-color: #437a7c;
+}
+
+.content {
+  margin-bottom: 25em;
 }
 
 .content h1 {
