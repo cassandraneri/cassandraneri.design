@@ -1880,6 +1880,16 @@ video {
   padding: 0 3.125rem;
 }
 
+@media (max-width: 768px) {
+  .image-slider-rc {
+    display: flex;
+    justify-content: space-between;
+    height: calc(80vh - 10rem);
+    align-items: center;
+    padding: 0 3.125rem;
+  }
+}
+
 .wrapper {
   overflow: hidden;
 }
@@ -1890,9 +1900,10 @@ video {
     overflow: hidden;
     height: 50vh;
     width: 100%;
-    top: 550px;
+    top: 100px;
     left: 0;
     z-index: -1;
+    padding: 1em;
   }
 }
 
