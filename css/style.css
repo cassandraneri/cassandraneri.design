@@ -367,7 +367,7 @@ img {
 
 /* HERO SECTION */
 
-.hero {
+#hero {
   position: relative;
   overflow-x: hidden;
 }
@@ -476,11 +476,12 @@ img {
   grid-row: 1;
   width: 100%;
   z-index: 2;
+  padding: 0 0 4em 0;
 }
 
 @media (max-width: 768px) {
   .site-hero-text {
-    padding: 2em 0;
+    padding: 5em 0;
     grid-column: 1 / -1;
     grid-row: 1;
     width: 100%;
@@ -498,7 +499,7 @@ img {
 
 @media (max-width: 768px) {
   .site-hero-inner-text h1 {
-    font-size: 3em;
+    font-size: 5em;
   }
 }
 
@@ -544,6 +545,7 @@ img {
 /* INTRO SECTION */
 
 #intro {
+  padding-top: 5em;
   display: flex;
   justify-content: flex-start;
 }
@@ -556,7 +558,6 @@ img {
 }
 
 #projects {
-  border: 2px solid red;
   display: flex;
   justify-content: center;
   padding: 2em;
@@ -580,7 +581,7 @@ img {
   background: url("https://www.cassandraneri.design/img/Canvas-Tote-Bag-MockUp.jpg") no-repeat center;
 }
 
-.projects__wrapper {
+.rc-projects__wrapper {
   padding: 120px 0 60px;
   background: transparent;
   transition: all ease 0.5s;
@@ -683,10 +684,8 @@ img {
 
   .item_img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     display: block;
-    padding-top: 6em;
   }
 
   .item1 {
@@ -739,7 +738,7 @@ img {
   margin: 0;
   padding: 0;
   gap: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .grid-flexy li {
@@ -935,8 +934,8 @@ li {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 1px;
-  color: #fff5ee;
-  border: 2px solid #fff5ee;
+  color: #95827c;
+  border: 2px solid #95827c;
   text-transform: lowercase;
   overflow: hidden;
   background: none;
@@ -944,6 +943,7 @@ li {
   cursor: pointer;
   transition: 0.8s ease-out;
   margin: 0 auto;
+  margin-top: 2em;
   text-decoration: none;
 }
 
@@ -977,6 +977,7 @@ li {
 /* FOOTER SITE NAV */
 
 .site-footer {
+  margin-top: 18em;
   padding: 2em 0 2em 0;
   background: #95827c;
 }
@@ -1095,12 +1096,33 @@ li {
 
 /* SOCIAL MEDIA */
 
-.wrapper {
+.social-wrapper {
   display: inline-flex;
   list-style: none;
 }
 
-.wrapper .icon {
+
+.social-wrapper {
+  overflow: hidden;
+  padding: 0 0 3em 18em;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .social-wrapper {
+    position: absolute;
+    overflow: hidden;
+    height: 94vh;
+    width: 80%;
+    top: -113px;
+    left: 82px;
+    z-index: -1;
+    padding: 1em;
+    padding-top: 15em;
+  }
+}
+
+.social-wrapper .icon {
   position: relative;
   color: #95827c;
   padding: 15px;
@@ -1111,7 +1133,7 @@ li {
   display: flex;
 }
 
-.wrapper .tooltip {
+.social-wrapper .tooltip {
   position: absolute;
   top: 0;
   font-family: "kepler-std", serif;
@@ -1119,15 +1141,13 @@ li {
   font-style: normal;
   padding: 5px 8px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.wrapper .tooltip::before {
+.social-wrapper .tooltip::before {
   position: absolute;
   content: "";
   height: 8px;
@@ -1137,7 +1157,7 @@ li {
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.wrapper .icon:hover .tooltip {
+/* .wrapper .icon:hover .tooltip {
   top: -45px;
   opacity: 1;
   visibility: visible;
@@ -1147,37 +1167,37 @@ li {
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .wrapper .linkedin:hover,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
-  color: #95827c;
+  color: #f9e1d5;
 }
 
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  color: #95827c;
+  color: #f9e1d5;
 }
 
 .wrapper .youtube:hover,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip::before {
-  color: #95827c;
+  color: #f9e1d5;
 }
 
 .wrapper .tiktok:hover,
 .wrapper .tiktok:hover .tooltip,
 .wrapper .tiktok:hover .tooltip::before {
-  color: #95827c;
+  color: #f9e1d5;
 }
 
 .social-icons {
   display: flex;
 }
 
-.wrapper {
+.social-wrapper {
   padding-bottom: 2em;
 }
 
@@ -1196,11 +1216,22 @@ li {
 
 .mouse {
   position: absolute;
-  left: 95%;
-  bottom: 90px;
+  right: -130px;
+  bottom: 208px;
   width: 28px;
-  height: 90px;
+  height: 200px;
   transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .mouse {
+    position: absolute;
+    right: -130px;
+    top: 10px;
+    width: 28px;
+    height: 200px;
+    transform: translateX(-50%);
+  }
 }
 
 .mouse:before,
@@ -1820,9 +1851,8 @@ figure:not(:hover)>video {
 
 .holidayemailcard {
   offset: unset;
-  max-width: 100%;
   height: auto;
-  margin-top: 6em;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -1873,7 +1903,7 @@ video {
 .image-slider-rc {
   display: flex;
   justify-content: space-between;
-  height: calc(100vh - 5rem);
+  height: calc(115vh - 30rem);
   align-items: center;
   padding: 0 3.125rem;
 }
@@ -1882,36 +1912,18 @@ video {
   .image-slider-rc {
     display: flex;
     justify-content: space-between;
-    height: calc(100vh - 18rem);
+    height: calc(100vh - 22rem);
     align-items: center;
     padding: 0 3.125rem;
-  }
-}
-
-.wrapper {
-  overflow: hidden;
-}
-
-@media (max-width: 768px) {
-  .wrapper {
-    position: absolute;
-    overflow: hidden;
-    height: 100vh;
-    width: 100%;
-    top: 220px;
-    left: 0;
-    z-index: -1;
-    padding: 1em;
-    padding-top: 15em;
   }
 }
 
 .absolute-wrapper {
   position: absolute;
   overflow: hidden;
-  height: 115vh;
+  height: 100vh;
   width: 60%;
-  top: 0;
+  top: 100;
   left: 0;
   z-index: -1;
 }
@@ -1920,9 +1932,9 @@ video {
   .absolute-wrapper {
     position: absolute;
     overflow: hidden;
-    height: 115vh;
+    height: 100vh;
     width: 65%;
-    top: 0;
+    top: 100;
     left: 0;
     z-index: -1;
   }
@@ -1955,7 +1967,14 @@ video {
 }
 
 .content {
-  margin-bottom: 20em;
+  margin-bottom: 16em;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-bottom: 5em;
+  }
+
 }
 
 .content h1 {
@@ -1968,8 +1987,8 @@ video {
 }
 
 .images {
-  width: 800px;
-  height: 600px;
+  width: 850px;
+  height: 650px;
   display: flex;
 }
 
@@ -1979,6 +1998,16 @@ video {
   flex-grow: 1;
   flex-shrink: 0;
   offset: path('M 300 250 C 300 -1000 250 180 350 80') 5px auto 90deg;
+}
+
+@media (max-width: 768px) {
+  .images .project-image {
+    width: 600px;
+    height: 96px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    offset: path('M 300 250 C 300 -1000 250 180 350 80') 5px auto 90deg;
+  }
 }
 
 /* .image:nth-child(1) {
@@ -1996,13 +2025,24 @@ video {
 .navigation {
   margin: 0;
   padding-bottom: 20em;
+  right: 300px;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    margin: 0;
+    padding: 0;
+    left: 575px;
+    position: absolute;
+  }
 }
 
 .navigation .right,
 .navigation .left {
   height: 60px;
   width: 60px;
-  border: 1px solid #333;
+  border: 1px solid #95827c;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -2013,8 +2053,8 @@ video {
 
 .navigation .right:hover,
 .navigation .left:hover {
-  background-color: #333;
-  color: white;
+  background-color: #f9e1d5;
+  color: #fff5ee;
 }
 
 .navigation .right:active,
@@ -2102,12 +2142,21 @@ video {
   color: #f9e1d5;
 }
 
-.social-icons {
+.rc-social-icons {
   display: flex;
 }
 
-.rc-wrapper {
-  padding-bottom: 2em;
+.rcproject-wrapper {
+  padding-top: 50em;
+}
+
+@media (max-width: 768px) {
+  .rcproject-wrapper {
+    padding-top: 34em;
+    height: auto;
+    width: 100%;
+  }
+
 }
 
 .icon-hover {
