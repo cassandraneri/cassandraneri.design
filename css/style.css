@@ -1507,31 +1507,9 @@ li {
 
 .texts-container span {
   display: block;
-  -webkit-animation: moveUp 8s infinite;
   animation: moveUp 8s infinite;
 }
 
-/* @-webkit-keyframes moveUp {
-  0% {
-    transform: translateY(0);
-  }
-
-  25% {
-    transform: translateY(-26%);
-  }
-
-  50% {
-    transform: translateY(-51%);
-  }
-
-  75% {
-    transform: translateY(-76%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-} */
 
 @keyframes moveUp {
   0% {
@@ -1554,6 +1532,45 @@ li {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .still-text {
+    font-weight: 400;
+    font-size: 25px;
+  }
+
+  .texts-container {
+    max-width: 46em;
+  }
+
+  .texts-container span {
+    display: block;
+    animation: moveUp 8s infinite;
+  }
+
+  @keyframes moveUp {
+    0% {
+      transform: translateY(0);
+    }
+
+    25% {
+      transform: translateY(-12%);
+    }
+
+    50% {
+      transform: translateY(-40%);
+    }
+
+    75% {
+      transform: translateY(-60%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
 
 /* SEMANTIC GRID SYSTEM */
 
