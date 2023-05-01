@@ -1067,7 +1067,7 @@ li {
     font-size: 3em;
     color: #f9e1d5;
     margin: 0;
-    padding: 0;
+    padding-left: .5em;
   }
 }
 
@@ -2061,8 +2061,7 @@ video {
 .rc-wrapper .icon {
   position: relative;
   color: #fff5ee;
-  padding: 15px;
-  margin: 10px;
+  margin-top: 1em;
   width: 50px;
   height: 50px;
   font-size: 18px;
