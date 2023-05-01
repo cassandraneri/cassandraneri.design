@@ -1510,7 +1510,6 @@ li {
   animation: moveUp 8s infinite;
 }
 
-
 @keyframes moveUp {
   0% {
     transform: translateY(0);
@@ -1532,45 +1531,6 @@ li {
     transform: translateY(0);
   }
 }
-
-@media (max-width: 768px) {
-  .still-text {
-    font-weight: 400;
-    font-size: 25px;
-  }
-
-  .texts-container {
-    max-width: 46em;
-  }
-
-  .texts-container span {
-    display: block;
-    animation: moveUp 8s infinite;
-  }
-
-  @keyframes moveUp {
-    0% {
-      transform: translateY(0);
-    }
-
-    25% {
-      transform: translateY(-12%);
-    }
-
-    50% {
-      transform: translateY(-40%);
-    }
-
-    75% {
-      transform: translateY(-60%);
-    }
-
-    100% {
-      transform: translateY(0);
-    }
-  }
-}
-
 
 /* SEMANTIC GRID SYSTEM */
 
@@ -1933,7 +1893,6 @@ video {
   justify-content: space-between;
   height: 100%;
   padding: 0 3.125rem;
-  border: 2px solid orange;
   position: relative;
 }
 
@@ -1951,7 +1910,6 @@ video {
   top: 0;
   left: 0;
   z-index: -1;
-  border: 2px solid pink;
 }
 
 @media (max-width: 768px) {
@@ -2010,7 +1968,6 @@ video {
   width: 850px;
   height: 650px;
   display: flex;
-  border: 2px solid green;
 }
 
 .images .project-image {
@@ -2018,7 +1975,6 @@ video {
   width: 100%;
   flex-grow: 1;
   flex-shrink: 0;
-  border: 2px solid yellow;
 }
 
 @media (max-width: 768px) {
@@ -2046,7 +2002,6 @@ video {
   right: 50px;
   top: 20px;
   position: absolute;
-  border: 2px solid blue;
 }
 
 /* @media (max-width: 768px) {
