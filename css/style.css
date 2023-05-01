@@ -499,7 +499,7 @@ img {
 
 @media (max-width: 768px) {
   .site-hero-inner-text h1 {
-    font-size: 5em;
+    font-size: 3em;
   }
 }
 
@@ -660,6 +660,13 @@ img {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 2em;
+}
+
+@media (max-width:768px) {
+  .container {
+    max-width: 1600px;
+    padding: 0 1em;
+  }
 }
 
 body {
@@ -1221,7 +1228,7 @@ li {
 .mouse {
   position: absolute;
   right: -130px;
-  bottom: 208px;
+  bottom: 4px;
   width: 28px;
   height: 200px;
   transform: translateX(-50%);
