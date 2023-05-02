@@ -732,7 +732,7 @@ img {
 @media (max-width: 768px) {
   .container {
     margin: 0 auto;
-    padding: 0 2em;
+    padding: 0 1em;
   }
 
   .grid {
@@ -2203,7 +2203,7 @@ svg.cass-2023 {
   flex-direction: column;
   overflow: hidden;
   flex: 1;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .track-list.cass-2023 a.cass-2023 {
