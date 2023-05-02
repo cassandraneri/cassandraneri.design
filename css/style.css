@@ -1174,7 +1174,7 @@ li {
     height: 94vh;
     width: 80%;
     top: -113px;
-    left: 10px;
+    left: -22px;
     z-index: -1;
     padding: 1em;
     padding-top: 15em;
@@ -1999,6 +1999,12 @@ video {
 .content h1 {
   margin-bottom: 1rem;
   font-size: 3.5rem;
+}
+
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
 }
 
 .content p {
