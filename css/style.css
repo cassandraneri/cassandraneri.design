@@ -714,12 +714,11 @@ img {
   padding: 0 2em;
 }
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
   .container {
-    max-width: 1600px;
     padding: 0 1em;
   }
-}
+} */
 
 body {
   font-family: "Poppins", sans-serif;
