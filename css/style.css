@@ -2138,3 +2138,127 @@ video {
   display: inline-block;
   position: relative;
 }
+
+/* MUSIC */
+
+.music.cass-2023 {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  background: #f9e1d5ba;
+  border-radius: 50px;
+  padding: 16px, 42px, 16px, 20px;
+  overflow: hidden;
+  height: 80px;
+  transition: all .2s ease-in-out;
+}
+
+svg.svelte-13vxf5t {
+  fill: #7b6964;
+}
+
+.track-list.cass-2023.cass-2023 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex: 1;
+  margin-left: 20px;
+}
+
+.track-list.cass-2023 a.cass-2023 {
+  text-decoration: none;
+  color: #fff5ee;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: all .2s ease-in-out;
+}
+
+.track-list.cass-2023 a.cass-2023:focus,
+.track-list.cass-2023 a.cass-2023:active {
+  text-decoration: none;
+}
+
+.track-list.cass-2023 .song.cass-2023,
+.track-list.cass-2023 .artist.cass-2023 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.track-list.cass-2023 .song.cass-2023 {
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+@media (min-width: 768px) {
+  .track-list.cass-2023 .song.cass-2023 {
+    letter-spacing: 0;
+  }
+}
+
+.track-list.cass-2023 .artist.cass-2023 {
+  opacity: .8;
+  color: #7b6964;
+  font-size: 15px;
+}
+
+.not-playing.cass-2023.cass-2023 {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.icon.cass-2023.cass-2023 {
+  display: flex;
+  border-radius: 50%;
+  opacity: .5;
+  padding-left: 1em;
+}
+
+.icon.playing-is-true.cass-2023.cass-2023 {
+  position: relative;
+  opacity: 1;
+  animation: cass-2023-pulse 3s infinite linear;
+  color: hsl(16, 90%, 96%);
+  box-shadow: rgba(0, 0, 0, .2);
+}
+
+.icon.playing-is-true.cass-2023.cass-2023:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: black;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: var(--z-index-content);
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon.playing-is-true.cass-2023.cass-2023 {
+    box-shadow: 0 0 #ffffff4d;
+  }
+}
+
+.cover.cass-2023.cass-2023 {
+  max-width: 40px;
+  border-radius: 50%;
+}
+
+@keyframes cass-2023-pulse {
+  0% {
+    transform: rotate3d(0, 0, 1, 0);
+  }
+
+  70% {
+    box-shadow: 0 0 0 20px hsla(var(--_h), var(--_s), var(--_l), 0);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, 360deg);
+    box-shadow: 0 0 0 0 hsla(var(--_h), var(--_s), var(--_l), 0);
+  }
+}
