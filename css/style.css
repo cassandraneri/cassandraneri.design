@@ -1278,7 +1278,7 @@ li {
 @media (max-width: 768px) {
   .mouse {
     position: absolute;
-    right: -130px;
+    right: -98px;
     top: 10px;
     width: 28px;
     height: 200px;
