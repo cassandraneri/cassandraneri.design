@@ -754,7 +754,7 @@ img {
 
 /* @media (max-width:768px) {
   .container {
-    padding: 0 1em;
+    padding: 0 2em;
   }
 } */
 
@@ -1227,6 +1227,10 @@ li {
 :is(h1) {
   color: #95827c;
   font-size: 10rem;
+}
+
+h1.proj-title {
+  font-size: 4em;
 }
 
 .snapper {
@@ -1736,6 +1740,7 @@ figure:not(:hover)>video {
   font-family: "kepler-std", serif;
   font-style: italic;
   font-weight: 600;
+  font-size: 4em;
 }
 
 .paragraphs__item__title .paragraphs__item__title--cream {
@@ -1746,7 +1751,8 @@ figure:not(:hover)>video {
 
 .paragraphs__item__number {
   position: absolute;
-  color: #f9e1d5;
+  /* color: #f9e1d5; */
+  color: #e4c7ba;
   font-size: 15em;
   font-family: "kepler-std", serif;
   font-weight: 500;
@@ -1757,7 +1763,7 @@ figure:not(:hover)>video {
   left: -5%;
   right: auto;
   bottom: auto;
-  font-size: 10em;
+  font-size: 8em;
   z-index: -1;
 }
 
@@ -1930,7 +1936,32 @@ figure:not(:hover)>video {
 /* CREATIVE PROCESS */
 
 .creativeprocess {
-  margin-bottom: 15em;
+  padding: 6em 0;
+  margin-top: 5em;
+}
+
+.final-1,
+.final-2,
+.final-3,
+.final-4 {
+  padding: 6em 0;
+  margin-top: 5em;
+}
+
+.final-1 {
+  background-color: #ddded9;
+}
+
+.final-2 {
+  background-color: #ddded9;
+}
+
+.final-3 {
+  background-color: #bcc1bd;
+}
+
+.final-4 {
+  background-color: #ebe2d9;
 }
 
 @media (max-width: 767px) {
@@ -1944,6 +1975,19 @@ figure:not(:hover)>video {
 .creativeprocesswork {
   background-color: rgb(35, 35, 35);
   padding: 4em;
+}
+
+@media (min-width: 768px) {
+  .creativeprocesswork .row {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding-bottom: 3em;
+  }
+}
+
+.creativeprocesswork .paragraphs__item__title {
+  font-size: 5em;
 }
 
 .creativeprocesswork h2 {
