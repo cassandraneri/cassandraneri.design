@@ -96,7 +96,7 @@ h5 {
 }
 
 p {
-  font-family: "" filson-pro"", sans-serif;
+  font-family: "filson-pro", sans-serif;
   font-size: 1em;
   font-weight: 300;
   max-width: 41em;
@@ -1033,7 +1033,7 @@ li {
   left: 50%;
 }
 
-.custom-button {
+.intro-custom-button {
   padding: 24px 48px;
   font-family: "kepler-std", serif;
   font-weight: 400;
@@ -1052,12 +1052,43 @@ li {
   text-decoration: none;
 }
 
-.custom-button:hover {
+.intro-custom-button:hover {
   content: "";
   color: #95827c;
   cursor: pointer;
   border: 2px solid #95827c;
   background-color: #f9e1d5;
+  height: 100%;
+  z-index: -1;
+  transition: top 0.8s ease-out;
+  top: 100%;
+}
+
+.custom-button {
+  padding: 24px 48px;
+  font-family: "kepler-std", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #f9e1d5;
+  border: 2px solid #f9e1d5;
+  text-transform: lowercase;
+  overflow: hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.8s ease-out;
+  margin: 0 auto;
+  margin-top: 2em;
+  text-decoration: none;
+}
+
+.custom-button:hover {
+  content: "";
+  color: #f9e1d5;
+  cursor: pointer;
+  border: 2px solid #f9e1d5;
+  background-color: #f9e1d54e;
   height: 100%;
   z-index: -1;
   transition: top 0.8s ease-out;
@@ -1082,7 +1113,7 @@ li {
 /* FOOTER SITE NAV */
 
 .site-footer {
-  padding: 2em 0 2em 0;
+  padding: 8em 0 2em 0;
   background: #95827c;
 }
 
@@ -1178,7 +1209,6 @@ li {
 }
 
 .currently-table td {
-  padding: 3em 1em 0 0;
   padding-bottom: .7em;
   font-weight: 100;
 }
@@ -1751,8 +1781,7 @@ figure:not(:hover)>video {
 
 .paragraphs__item__number {
   position: absolute;
-  /* color: #f9e1d5; */
-  color: #e4c7ba;
+  color: #f9e1d5;
   font-size: 15em;
   font-family: "kepler-std", serif;
   font-weight: 500;
@@ -1949,7 +1978,16 @@ figure:not(:hover)>video {
 }
 
 .final-1 {
-  background-color: #ddded9;
+  background-color: #F2D2C4;
+}
+
+.final-1 h2,
+.final-1 p {
+  color: #fff5ee;
+}
+
+.final-1 .paragraphs__item__number {
+  color: #9b857f51;
 }
 
 .final-2 {
@@ -1973,8 +2011,11 @@ figure:not(:hover)>video {
 /* CREATIVE PROCESS WORK */
 
 .creativeprocesswork {
-  background-color: rgb(35, 35, 35);
+  background-color: #405A56;
   padding: 4em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -1998,6 +2039,9 @@ figure:not(:hover)>video {
   color: #f9e1d5;
   padding-bottom: 3em;
   font-weight: 400;
+  text-align: center;
+  width: 40em;
+  margin: 0 auto;
 }
 
 /* VIDEOS */
@@ -2123,6 +2167,7 @@ video {
 .content h1 {
   margin-bottom: 1rem;
   font-size: 3.5rem;
+  width: 10em;
 }
 
 @media (max-width: 768px) {
