@@ -48,10 +48,9 @@
             <ul>
                 <li><a href="index.html">✿ work ✿</a></li>
                 <li><a href="about.html">✿ about ✿</a></li>
-                <li><a href="misc.html">✿ archive ✿</a></li>
+                <li><a href="archive.html">✿ archive ✿</a></li>
             </ul>
         </nav>
-
         <!-- <div class="social-icons">
         <ul class="wrapper">
           <li class="icon linkedin">
@@ -140,15 +139,9 @@
                                     data-appear-top-offset="-137.2"
                                     style="transform: translateZ(0px) translateY(20%); opacity: 0.887147;">
                                     <h2 class="paragraphs__item__title">Ideation</h2>
-                                    <p class="paragraphs__item__text">As a part of my research, I first, read the story
-                                        online,
-                                        establishing a tone for the story, as well as what the main themes/ideas were
-                                        that I was
-                                        trying to discover. After spending some time brainstorming, sketching, and
-                                        resketching, I
-                                        eventually came up
-                                        with strong concepts for my book cover after taking note of many weak ideas and
-                                        resketching them many more&nbsp;times.
+                                    <p class="paragraphs__item__text">After reading the story online, I formed a sense
+                                        of tone and main themes/ideas for my book cover. After brainstorming, sketching,
+                                        and resketching the weak ideas, I eventually came up with solid&nbsp;concepts.
                                     </p><span data-bottom-top="transform: translateZ(0) translateY(5%); opacity: 0;"
                                         data-top-bottom="transform: translateZ(0) translateY(-20%);"
                                         data--200-bottom="opacity:1;"
@@ -162,6 +155,7 @@
                                 src="videos/ideation.mp4"></video>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="column one-half">
                             <div class="paragraphs_box paragraphs_box--bottom">
@@ -213,6 +207,39 @@
                                 src="videos/design.mp4"></video>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section class="creativeprocesswork">
+                <div class="container">
+                    <div class="row">
+                        <div class="column">
+                            <div class="paragraphs__item paragraphs__item--no_number js-appearing-content"
+                                data-appear-top-offset="-137.2">
+                                <h2 class="paragraphs__item__title paragraphs__item__title--cream">✿ Creative Process
+                                    Video
+                                    ✿
+                                </h2>
+                                <p class="paragraphs__item__text paragraphs__item__text--white">I created a video
+                                    to
+                                    show my
+                                    full design process for my book trilogy&nbsp;project.</p>
+                                <a href="https://www.youtube.com/watch?v=gNN91pwnwf4" target="_blank"
+                                    class="custom-button">see full
+                                    video</a>
+                                <div data-bottom-top="transform: scaleY(0.5);"
+                                    data-center-bottom="transform: scaleY(1);"
+                                    class="paragraphs_box_big_line skrollable skrollable-between"
+                                    style="transform: scaleY(0.578659);">
+                                </div>
+                                <div data-bottom-top="transform: scaleY(0);" data-center-bottom="transform: scaleY(1);"
+                                    class="paragraphs_box_line skrollable skrollable-before"
+                                    style="transform: scaleY(0);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section class="final-1">
@@ -240,43 +267,14 @@
                             </div>
                         </div>
                         <div class="column">
-                            <img src="img/booktrilogy.webp" alt="">
+                            <img src="img/trilogy-all.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 </div>
             </section>
 
-            <section class="creativeprocesswork">
-                <div class="row">
-                    <!-- <div class="column one-half">
-                        <div class="column one-half">
-                            <img src="img/creativeprocessvideo.png" alt="">
-                        </div>
-                    </div> -->
-                    <div class="column">
-                        <div class="paragraphs__item paragraphs__item--no_number js-appearing-content"
-                            data-appear-top-offset="-137.2">
-                            <h2 class="paragraphs__item__title paragraphs__item__title--cream">✿ Creative Process Video
-                                ✿
-                            </h2>
-                            <p class="paragraphs__item__text paragraphs__item__text--white">I recorded this video to
-                                show my
-                                full design process for my book trilogy&nbsp;project.</p>
-                            <a href="https://www.youtube.com/watch?v=gNN91pwnwf4" target="_blank"
-                                class="custom-button">see full
-                                video</a>
-                            <div data-bottom-top="transform: scaleY(0.5);" data-center-bottom="transform: scaleY(1);"
-                                class="paragraphs_box_big_line skrollable skrollable-between"
-                                style="transform: scaleY(0.578659);">
-                            </div>
-                            <div data-bottom-top="transform: scaleY(0);" data-center-bottom="transform: scaleY(1);"
-                                class="paragraphs_box_line skrollable skrollable-before" style="transform: scaleY(0);">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
 
             <!-- partial -->
             <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
@@ -288,11 +286,30 @@
                 <ul>
                     <li><a href="index.html">work</a></li>
                     <li><a href="about.html">about</a></li>
-                    <li><a href="misc.html">archive</a></li>
+                    <li><a href="archive.html">archive</a></li>
                 </ul>
             </nav>
             </div>
         </footer>
+
+        <!-- SMOOTH SCROLL BY CHRIS FERDINANDI https://github.com//cferdinandi/smooth-scroll-->
+        <script src="js/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 800,
+                speedAsDuration: true
+            });
+        </script>
+
+        <!-- OTHER JS FILES -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+
+        <!-- SCROLL JS FILE -->
+        <script src="js/scroll.js"></script>
+
+        <!-- MAIN JS FILE -->
+        <script src="js/subpage.js"></script>
 
     </body>
 
