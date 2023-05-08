@@ -1,25 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>My Portfolio | Web Site</title>
+    <meta charset="UTF-8">
+    <title>Cassandra Neri | Portfolio 🤓</title>
+    <meta name="description"
+        content="This is a starter HTML + CSS + JS boilerplate set of code for website projects." />
 
-    <!-- HTML5 -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    <!-- FOR MOBILE / SMALL SCREENS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- VIEWPORT FOR MOBILE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FOR IE/EDGE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- MAIN CSS FILE -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="subpage-test/style.css" rel="stylesheet" type="text/css" />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- FONTS -->
-    <link rel="stylesheet" href="https://use.typekit.net/emk1wna.css">
-    <link rel="stylesheet" href="https://use.typekit.net/emk1wna.css">
     <link rel="stylesheet" href="https://use.typekit.net/emk1wna.css">
 
 </head>
@@ -157,7 +155,7 @@
                             </div>
                         </div>
                         <div class="column one-half">
-                            <img src="img/serenelogos.jpg" alt="">
+                            <img src="img/logovariations.jpg" alt="">
                         </div>
                     </div>
                     <div class="row">
@@ -244,7 +242,6 @@
                 </div>
             </section>
 
-
             <section class="final-2">
                 <div class="row stacked">
                     <div class="column">
@@ -280,26 +277,34 @@
         </main>
 
         <footer class="site-footer">
+            <div class="container">
+                <div class="row">
 
-            <div>
-                <button class="intro-custom-button" onclick="window.location.href='#bottom';">get in touch</button>
-            </div>
+                    <section class="footer-socials">
+                        <div class="social-icons">
+                            <ul class="social-wrapper">
+                                <li class="icon linkedin">
+                                    <span class="tooltip">linkedin</span>
+                                    <span><i class="fab fa-linkedin"></i></span>
+                                </li>
+                                <li class="icon instagram">
+                                    <span class="tooltip">instagram</span>
+                                    <span><i class="fab fa-instagram"></i></span>
+                                </li>
+                                <li class="icon tiktok">
+                                    <span class="tooltip">tiktok</span>
+                                    <span><i class="fab fa-tiktok"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
 
-            <div class="social-icons">
-                <ul class="social-wrapper">
-                    <li class="icon linkedin">
-                        <span class="tooltip">linkedin</span>
-                        <span><i class="fab fa-linkedin"></i></span>
-                    </li>
-                    <li class="icon instagram">
-                        <span class="tooltip">instagram</span>
-                        <span><i class="fab fa-instagram"></i></span>
-                    </li>
-                    <li class="icon tiktok">
-                        <span class="tooltip">tiktok</span>
-                        <span><i class="fab fa-tiktok"></i></span>
-                    </li>
-                </ul>
+                    <div>
+                        <button class="intro-custom-button" onclick="window.location.href='#bottom';">get in
+                            touch</button>
+                    </div>
+
+                </div>
             </div>
 
             <div class="logomark">
@@ -308,14 +313,12 @@
 
             <nav class="site-nav">
                 <ul>
-                    </div>
                     <li><a href="index.html">work</a></li>
                     <li><a href="about.html">about</a></li>
                     <li><a href="archive.html">archive</a></li>
                 </ul>
                 <div class="text-muted-sub">© Copyright 2023 Cassandra Neri - All rights reserved.</div>
             </nav>
-            </div>
         </footer>
 
         <!-- SMOOTH SCROLL BY CHRIS FERDINANDI https://github.com//cferdinandi/smooth-scroll-->
@@ -336,6 +339,7 @@
 
         <!-- MAIN JS FILE -->
         <script src="js/subpage.js"></script>
+        <script src="js/script.js"></script>
 
     </body>
 
